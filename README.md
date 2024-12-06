@@ -13,3 +13,12 @@ A GitHub Action that analyzes a repository to find stale branches and issues.
 
 - Rust (if running locally).
 - A GitHub repository with a valid `GITHUB_TOKEN` set in the environment.
+
+## Installation
+
+### 1. Add this repository
+Fork or clone the repository into your GitHub account.
+
+### 2. Set up the GitHub Action
+
+Declutter is configured to run as a GitHub Action by default. The configuration is located in `.github/workflows/declutter.yml`. It runs every Sunday but can also be triggered manually.
