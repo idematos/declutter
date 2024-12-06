@@ -31,7 +31,7 @@ Declutter is configured to run as a GitHub Action by default. The configuration 
 
 ```bash
 cargo build --release
-GITHUB_TOKEN=<your-personal-access-token> GITHUB_REPOSITORY=<owner/repo> ./target/release/declutter
+GITHUB_TOKEN=<your-access-token> GITHUB_REPOSITORY=<owner/repo> ./target/release/declutter
 ```
 
 ## Output
