@@ -22,3 +22,13 @@ Fork or clone the repository into your GitHub account.
 ### 2. Set up the GitHub Action
 
 Declutter is configured to run as a GitHub Action by default. The configuration is located in `.github/workflows/declutter.yml`. It runs every Sunday but can also be triggered manually.
+
+### 3. Run Locally (Optional)
+
+1. Install [Rust](https://rustup.rs/).
+2. Clone the repository and navigate to its directory.
+3. Run:
+
+```bash
+cargo build --release
+GITHUB_TOKEN=<your-personal-access-token> GITHUB_REPOSITORY=<owner/repo> ./target/release/declutter
