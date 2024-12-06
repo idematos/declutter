@@ -36,7 +36,16 @@ GITHUB_TOKEN=<your-personal-access-token> GITHUB_REPOSITORY=<owner/repo> ./targe
 
 ## Output
 
-It generates a `declutter-report.md` file, which includes:
+It generates a `declutter-report.md` file, including:
 
 - **Stale Branches**: Branches that have been inactive beyond the threshold.
 - **Stale Issues**: Issues that haven’t been updated within the threshold.
+
+## Configuration
+
+You can change the thresholds for stale branches and issues by modifying these constants in `src/main.rs`:
+
+```
+const STALE_BRANCH_THRESHOLD_DAYS: i64 = 180;
+const STALE_ISSUE_THRESHOLD_DAYS: i64 = 180;
+```
