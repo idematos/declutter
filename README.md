@@ -1,2 +1,3 @@
-# declutter
-It finds stale branches and issues.
+# Declutter
+
+A GitHub Action that analyzes a repository to find stale branches and issues.
