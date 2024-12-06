@@ -1,20 +1,20 @@
 # Declutter
 
-A GitHub Action that analyzes a repository to find stale branches and issues.
+A GitHub Action that analyses a repository to identify stale branches and issues.
 
 ## Features
 
 - Detects **stale branches**: Branches with no activity for a configurable period (default: 6 months).
 - Detects **stale issues**: Issues with no updates for a configurable period (default: 6 months).
-- Generates a **markdown report** (`declutter-report.md`) with all findings.
-- Runs as a **GitHub Action** on a schedule or manually.
+- Generates a report (`declutter-report.md`) containing all findings.
+- Runs as a GitHub Action on a schedule or manually.
 
 ## Requirements
 
 - Rust (if running locally).
 - A GitHub repository with a valid `GITHUB_TOKEN` set in the environment.
 
-## Installation
+## Usage
 
 ### 1. Add this repository
 Fork or clone the repository into your GitHub account.
@@ -36,7 +36,7 @@ GITHUB_TOKEN=<your-personal-access-token> GITHUB_REPOSITORY=<owner/repo> ./targe
 
 ## Output
 
-It generates a `declutter-report.md` file, including:
+It generates `declutter-report.md`, which includes:
 
 - **Stale Branches**: Branches that have been inactive beyond the threshold.
 - **Stale Issues**: Issues that haven’t been updated within the threshold.
