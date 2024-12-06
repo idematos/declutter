@@ -32,3 +32,11 @@ Declutter is configured to run as a GitHub Action by default. The configuration 
 ```bash
 cargo build --release
 GITHUB_TOKEN=<your-personal-access-token> GITHUB_REPOSITORY=<owner/repo> ./target/release/declutter
+```
+
+## Output
+
+It generates a `declutter-report.md` file, which includes:
+
+- **Stale Branches**: Branches that have been inactive beyond the threshold.
+- **Stale Issues**: Issues that haven’t been updated within the threshold.
