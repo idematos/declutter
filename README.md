@@ -49,3 +49,7 @@ You can change the thresholds for stale branches and issues by modifying these c
 const STALE_BRANCH_THRESHOLD_DAYS: i64 = 180;
 const STALE_ISSUE_THRESHOLD_DAYS: i64 = 180;
 ```
+
+## Contributions
+
+Contributions are welcome. Feel free to open an issue or submit a pull request if you have questions or suggestions.
